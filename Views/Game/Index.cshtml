@@ -1,0 +1,32 @@
+@{
+    ViewData["Title"] = "Cribbage Game";
+}
+
+<div id="gameBoard">
+    <div id="cribbageBoard">
+        <!-- Cribbage board elements go here -->
+    </div>
+    <div id="player1Hand" class="playerHand">
+        <!-- Player 1 hand elements go here -->
+    </div>
+    <div id="player2Hand" class="playerHand">
+        <!-- Player 2 hand elements go here -->
+    </div>
+    <div id="deck">
+        <!-- Deck elements go here -->
+    </div>
+    <div id="crib">
+        <!-- Crib elements go here -->
+    </div>
+</div>
+
+<div id="videoChat">
+    <video id="localVideo" autoplay muted></video>
+    <video id="remoteVideo" autoplay></video>
+    <button id="startVideoChatButton">Start Video Chat</button>
+    <button id="createOfferButton">Create Offer</button>
+</div>
+
+@section Scripts {
+    <script src="~/js/webrtc.js"></script>
+}

@@ -1,0 +1,44 @@
+/* CSS animations for card movements */
+
+@keyframes moveCard {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(100px, 100px);
+    }
+}
+
+@keyframes rotateCard {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes scaleCard {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.5);
+    }
+}
+
+.card {
+    transition: transform 0.5s ease-in-out;
+}
+
+.card.move {
+    animation: moveCard 1s forwards;
+}
+
+.card.rotate {
+    animation: rotateCard 1s forwards;
+}
+
+.card.scale {
+    animation: scaleCard 1s forwards;
+}
